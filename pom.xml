@@ -11,6 +11,11 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.3.1.RELEASE</version>
+    <configuration>
+			<layers>
+				<enabled>true</enabled>
+			</layers>
+		</configuration>
   </parent>
   <name>petclinic</name>
 
@@ -185,6 +190,11 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+			<layers>
+				<enabled>true</enabled>
+			</layers>
+		</configuration>
         <executions>
           <execution>
             <!-- Spring Boot Actuator displays build-related information
@@ -199,9 +209,7 @@
                 <java.source>${maven.compiler.source}</java.source>
                 <java.target>${maven.compiler.target}</java.target>
               </additionalProperties>
-                      <layers>
-				               <enabled>true</enabled>
-			               </layers>
+                     
             </configuration>
           </execution>
         </executions>
@@ -365,6 +373,11 @@
                       <pluginExecutionFilter>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-maven-plugin</artifactId>
+                        <configuration>
+			                        <layers>
+				                          <enabled>true</enabled>
+			                        </layers>
+		                    </configuration>
                         <versionRange>[1,)</versionRange>
                         <goals>
                           <goal>build-info</goal>
@@ -376,9 +389,7 @@
                     </pluginExecution>
                   </pluginExecutions>
                 </lifecycleMappingMetadata>
-                        <layers>
-				                  <enabled>true</enabled>
-			                  </layers>
+                        
               </configuration>
             </plugin>
           </plugins>
