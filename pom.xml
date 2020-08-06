@@ -199,6 +199,9 @@
                 <java.source>${maven.compiler.source}</java.source>
                 <java.target>${maven.compiler.target}</java.target>
               </additionalProperties>
+                      <layers>
+				               <enabled>true</enabled>
+			               </layers>
             </configuration>
           </execution>
         </executions>
@@ -373,6 +376,9 @@
                     </pluginExecution>
                   </pluginExecutions>
                 </lifecycleMappingMetadata>
+                        <layers>
+				                  <enabled>true</enabled>
+			                  </layers>
               </configuration>
             </plugin>
           </plugins>
